@@ -7,7 +7,7 @@ require 'yaml'
 @shopping_list = []
 @updated_item_database = []
 @items = YAML.load(File.read("item_database.yml"))
-@oldshoppinglist = YAML.load(File.read("currentshoppinglist.yml"))
+@previous_shopping_list = YAML.load(File.read("currentshoppinglist.yml"))
 
 
 
@@ -38,7 +38,7 @@ def load_file
 		@updated_item_database.push list_item
 	end
 
-	@oldshoppinglist.each do |old_item|
+	@previous_shopping_list.each do |old_item|
 		@shopping_list.push old_item
 	end
 end
