@@ -1,0 +1,40 @@
+ingredients = ["PNP: Spinach", "PNP: Spring Onion"]
+input = "sp"
+
+matcher = /:\s#{input}/
+
+ingredients.map do |ingredient|
+  ingredient.downcase.match(matcher)
+end
+
+
+ingredients = ["PNP: Spinach", "PNP: Spring Onion", "PNP: Apples", "PNP: Spelt bread"]
+input = "sp"
+
+x = ingredients.map do |ingredients|
+	shop, test_item = ingredients.downcase.split(": ")
+	test_item.start_with?(input)
+end
+	
+if x.count(true) > 1
+puts "Too many"
+end
+
+
+
+
+	test_item = input.downcase
+
+osascript -e 'tell application "Messages" to send "Hello" to buddy "Jomiro Eming"'
+
+
+
+set targetBuddy to "+27769020120"
+    set targetService to id of 1st service whose service type = iMessage
+
+  
+
+        set textMessage to "Hi there!"
+
+        set theBuddy to buddy targetBuddy of service id targetService
+        send textMessage to theBuddy
