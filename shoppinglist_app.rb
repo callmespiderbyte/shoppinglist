@@ -15,8 +15,9 @@ while input != "add" && input != "finish"
 
 end
 
-if input = "add"
+if input == "add"
 	run_addsave
 else 
 	run_sendclear
 end
+
