@@ -20,7 +20,7 @@ require 'yaml'
 # ------------------------------------------------------------------------
 
 def run_addsave
-	puts "-----------------"
+	puts "-----------------"🐝
 	load_file 
 	run_shopping_list
 	finish_addsave
@@ -210,7 +210,7 @@ end
 def finish_addsave
 	save_file
 	save_for_export
-endß
+end
 
 def finish_sendclear
 	save_file
